@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<title>Programming Languages Visualized</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This project aims to illustrate what code of different programming languages looks like. Code from common FOSS projects has been run through code-to-svg.">
+	<meta name="author" content="Jannis R <mail@jannisr.de>">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		@font-face{ font-family: "Sorts Mill Goudy"; font-style: normal; font-weight: 400;
+			src: local("Sorts Mill Goudy Regular"), local("SortsMillGoudy-Regular"), url(sorts-mill-goudy.woff) format("woff"); }
+		@font-face { font-family: "Merriweather"; font-style: normal; font-weight: 400;
+			src: local("Merriweather"), url(merriweather.woff) format("woff"); }
+	</style>
+	<style>
+		body { margin: 2rem; line-height: 1.5; font-size: 115%;
+			font-family: Merriweather, serif; color: #505050; }
+
+		h1, h2 { margin: 2rem 0; line-height: 1.2; text-align: center;
+			font-family: "Sorts Mill Goudy", serif; }
+		h1 { font-size: 200%; }
+		h2 { margin-bottom: 1rem; font-size: 150%; }
+
+		p { margin: 1rem auto; max-width: 35em; }
+		a { color: #006eff; text-decoration: none; }
+		a:hover, a:active { text-decoration: underline; }
+
+		code {
+			padding: .25em; font-size: 90%;
+			font-family: Monaco, "Courier New", monospace;
+			color: #333; background-color: #f1f1f1; }
+
+		ul { margin: 1rem 0; }
+
+		#nav { margin-bottom: 5rem; }
+		#nav ul { list-style: none; text-align: center; }
+		#nav ul li { display: inline-block; margin: 0 .3em; }
+
+		span.source { display: block; margin: 1rem 0; text-align: center; }
+		img.code { display: block; margin: 2rem auto;
+			padding-left: .5em; border-left: 1px solid #aaa; }
+	</style>
+</head>
+<body>
+	<h1>Programming Languages Visualized</h1>
+	<p>This project aims to illustrate what code of different programming languages looks like. Code from common FOSS projects has been run through <a href="https://github.com/derhuerst/code-to-svg"><code>code-to-svg</code></a>.</p>
+	<nav id="nav" role="navigation">
+		<ul>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#ruby">Ruby</a></li>
+			<li><a href="#python">Python</a></li>
+			<li><a href="#java">Java</a></li>
+			<li><a href="#c">C</a></li>
+			<li><a href="#cpp">C++</a></li>
+			<li><a href="#swift">Swift</a></li>
+			<li><a href="#php">PHP</a></li>
+		</ul>
+	</nav>
+	<section id="javascript">
+		<h2>JavaScript</h2>
+		<span class="source">from <a href="https://github.com/facebook/react/blob/92530b4/src/renderers/dom/client/ReactMount.js"><code>facebook/react</code></a></span>
+		<img class="code" src="svg/ReactMount.js.svg" alt="A visualization of some JavaScript source code."/>
+	</section>
+	<section id="ruby">
+		<h2>Ruby</h2>
+		<span class="source">from <a href="https://github.com/rails/rails/blob/d8e9889/actionview/lib/action_view/test_case.rb"><code>rails/rails</code></a></span>
+		<img class="code" src="svg/test_case.rb.svg" alt="A visualization of some Ruby source code."/>
+	</section>
+	<section id="python">
+		<h2>Python</h2>
+		<span class="source">from <a href="https://github.com/jkbrzt/httpie/blob/6e1dbad/httpie/core.py"><code>jkbrzt/httpie</code></a></span>
+		<img class="code" src="svg/core.py.svg" alt="A visualization of some Python source code."/>
+	</section>
+	<section id="java">
+		<h2>Java</h2>
+		<span class="source">from <a href="https://github.com/elastic/elasticsearch/blob/40789d8/core/src/main/java/org/elasticsearch/env/Environment.java"><code>elastic/elasticsearch</code></a></span>
+		<img class="code" src="svg/Environment.java.svg" alt="A visualization of some Java source code."/>
+	</section>
+	<section id="c">
+		<h2>C</h2>
+		<span class="source">from <a href="https://github.com/torvalds/linux/blob/63e41eb/crypto/crypto_user.c"><code>torvalds/linux</code></a></span>
+		<img class="code" src="svg/crypto_user.c.svg" alt="A visualization of some C source code."/>
+	</section>
+	<section id="cpp">
+		<h2>C++</h2>
+		<span class="source">from <a href="https://github.com/apple/swift/blob/868a795/lib/Parse/ParseGeneric.cpp"><code>apple/swift</code></a></span>
+		<img class="code" src="svg/ParseGeneric.cpp.svg" alt="A visualization of some C++ source code."/>
+	</section>
+	<section id="swift">
+		<h2>Swift</h2>
+		<span class="source">from <a href="https://github.com/Alamofire/Alamofire/blob/e68235f/Source/Download.swift"><code>Alamofire/Alamofire</code></a></span>
+		<img class="code" src="svg/Download.swift.svg" alt="A visualization of some Swift source code."/>
+	</section>
+	<section id="php">
+		<h2>PHP</h2>
+		<span class="source">from <a href="https://github.com/symfony/symfony/blob/5380d68/src/Symfony/Component/DependencyInjection/Container.php"><code>symfony/symfony</code></a></span>
+		<img class="code" src="svg/Container.php.svg" alt="A visualization of some PHP source code."/>
+	</section>
+</body>
