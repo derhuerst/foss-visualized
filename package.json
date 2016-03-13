@@ -1,0 +1,19 @@
+{
+	"name":              "foss-visualized",
+	"description":       "Code of different programming languages visualized.",
+	"version":           "0.1.0",
+	"private":           true,
+	"author":            "Jannis R <mail@jannisr.de>",
+	"homepage":          "https://github.com/derhuerst/foss-visualized",
+	"repository":        "git://github.com/derhuerst/foss-visualized.git",
+	"license":           "ISC",
+	"dependencies": {
+		"coffee-script": "^1.10",
+		"code-to-svg":   "^0.1.1"
+	},
+	"scripts": {
+		"clean":         "fish -c 'rm ./svg/*.svg ^ /dev/null; true'",
+		"visualize":     "./visualize.fish",
+		"build":         "npm run clean && npm run visualize"
+	}
+}
