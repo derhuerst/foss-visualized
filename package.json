@@ -12,8 +12,9 @@
 		"code-to-svg":   "^0.1.1"
 	},
 	"scripts": {
+		"truncate":      "./truncate.fish",
 		"clean":         "fish -c 'rm ./svg/*.svg ^ /dev/null; true'",
 		"visualize":     "./visualize.fish",
-		"build":         "npm run clean && npm run visualize"
+		"build":         "npm run truncate && npm run clean && npm run visualize"
 	}
 }
