@@ -34,7 +34,8 @@
 
 		ul { margin: 1rem 0; }
 
-		section { margin-top: 14rem; }
+		section { display: inline-block; margin: 14rem 1rem; }
+		section:target { background-color: #f7f7f7; }
 		footer { margin-top: 6rem; text-align: center; }
 
 		#nav ul { list-style: none; text-align: center; }
@@ -61,6 +62,7 @@
 			<li><a href="#php">PHP</a></li>
 		</ul>
 	</nav>
+	<div>
 	<section id="javascript">
 		<h2>JavaScript</h2>
 		<span class="source">from <a href="https://github.com/facebook/react/blob/92530b4/src/renderers/dom/client/ReactMount.js"><code>facebook/react</code></a></span>
@@ -101,6 +103,7 @@
 		<span class="source">from <a href="https://github.com/symfony/symfony/blob/5380d68/src/Symfony/Component/DependencyInjection/Container.php"><code>symfony/symfony</code></a></span>
 		<img class="code" src="svg/Container.php.svg" alt="A visualization of some PHP source code."/>
 	</section>
+	</div>
 	<footer>
 		<p>Made with <span class="love">❤</span> by <a href="https://jannisr.de/">Jannis R</a>.</p>
 	</footer>
